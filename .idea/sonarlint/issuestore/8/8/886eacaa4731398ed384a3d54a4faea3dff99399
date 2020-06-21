@@ -1,0 +1,13 @@
+
+b	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(‹×þƒ8ØŸŒ—¬.
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(…¨àÝùÿÿÿÿ8ØŸŒ—¬.
+w
+java:S1450
+"URemove the "driver" field and declare it as a local variable in the relevant methods.(¼°ášøÿÿÿÿ8ØŸŒ—¬.
+t
+java:S1450"WRemove the "selenium" field and declare it as a local variable in the relevant methods.(ƒÉå˜8ØŸŒ—¬.
+>
+java:S1170"!Make this final field static too.(³Ÿ­½8ØŸŒ—¬.
+j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹×þƒ8ØŸŒ—¬.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(÷™ÕÏúÿÿÿÿ8ØŸŒ—¬.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ïŸÕâÿÿÿÿÿ8ØŸŒ—¬.

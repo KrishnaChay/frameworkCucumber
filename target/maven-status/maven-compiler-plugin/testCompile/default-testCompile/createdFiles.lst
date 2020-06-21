@@ -1,0 +1,4 @@
+stepDefinitions/RunCucumberTest.class
+stepDefinitions/WebStepDefinitions.class
+stepDefinitions/Hooks.class
+stepDefinitions/BaseStepDef.class
