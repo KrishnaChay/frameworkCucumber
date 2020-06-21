@@ -7,19 +7,21 @@ import pages.Page1;
 import pages.Page2;
 import pages.Page3;
 import pages.Wilko;
+import utils.Utilties;
 
-public class WebStepDefinitions extends BaseStepDef {
+public class WebStepDefinitions {
 
     private final String appURL = "http://qaclickacademy.com/";
     Page1 test1 = new Page1();
     Page2 test2 = new Page2();
     Page3 test3 = new Page3();
     Wilko wilko = new Wilko();
+    Utilties util = new Utilties();
 
     @Given("open website")
     public void open_website() throws Exception {
         // Write code here that turns the phrase above into concrete actions
-        openWebsite(appURL);
+        util.openWebsite(appURL);
 
     }
 
@@ -41,7 +43,7 @@ public class WebStepDefinitions extends BaseStepDef {
 
     @Given("open website {string}")
     public void openWebsiteHttpsWwwWilkoCom(String url) throws Exception {
-        openWebsite(url);
+        util.openWebsite(url);
     }
 
     @And("select the product")
@@ -50,7 +52,5 @@ public class WebStepDefinitions extends BaseStepDef {
         wilko.kitchenLink().click();
         wilko.cookwareLink().click();
         wilko.inductionCheckbox().click();
-        jsClick(Locators.xpath, "(//span[contains(.,'Woks')])[1]");
-        jsClick(Locators.xpath, "(//span[contains(.,'Wilko Aluminium Shot Blast Wok & Lid 28cm')]/following-sibling::span)[1]");
-    }
+        }
 }

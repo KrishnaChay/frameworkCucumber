@@ -1,1 +1,118 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" time="0.007"/>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="4" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="17.01">
+<testcase classname="Sample framework" name="sample test1" time="9.367">
+<failure message="invalid session id&#10;Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'&#10;System info: host: 'cyax-C02Q3A6GG8WN', ip: 'fdaa:bbcc:ddee:0:7d1e:5ac:ebd0:8016%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_181'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=/var/folders/xv/82hf63qn3w933wt9vqdh6jrc0000gq/T/.com.google.Chrome.Ovi7f7}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=MAC, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:54614}, acceptInsecureCerts=false, browserVersion=83.0.4103.106, browserName=chrome, javascriptEnabled=true, platformName=MAC, setWindowRect=true, webauthn:virtualAuthenticators=true}]&#10;Session ID: d21cf98f12a3edddd0ef5c6cc34c69e0" type="org.openqa.selenium.NoSuchSessionException"><![CDATA[Given open website..........................................................passed
+When user login with 'test' and 'test'......................................passed
+
+StackTrace:
+org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'cyax-C02Q3A6GG8WN', ip: 'fdaa:bbcc:ddee:0:7d1e:5ac:ebd0:8016%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=/var/folders/xv/82hf63qn3w933wt9vqdh6jrc0000gq/T/.com.google.Chrome.Ovi7f7}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=MAC, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:54614}, acceptInsecureCerts=false, browserVersion=83.0.4103.106, browserName=chrome, javascriptEnabled=true, platformName=MAC, setWindowRect=true, webauthn:virtualAuthenticators=true}]
+Session ID: d21cf98f12a3edddd0ef5c6cc34c69e0
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:703)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:532)
+	at stepDefinitions.Hooks.endTest(Hooks.java:37)
+]]></failure>
+</testcase>
+<testcase classname="Sample framework" name="sample test2" time="7.483">
+<failure message="stale element reference: element is not attached to the page document&#10;  (Session info: chrome=83.0.4103.106)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html&#10;Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'&#10;System info: host: 'cyax-C02Q3A6GG8WN', ip: 'fdaa:bbcc:ddee:0:7d1e:5ac:ebd0:8016%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_181'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=/var/folders/xv/82hf63qn3w933wt9vqdh6jrc0000gq/T/.com.google.Chrome.oVzSuO}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=MAC, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:54829}, acceptInsecureCerts=false, browserVersion=83.0.4103.106, browserName=chrome, javascriptEnabled=true, platformName=MAC, setWindowRect=true, webauthn:virtualAuthenticators=true}]&#10;Session ID: c056e5caa041fddcbc531882c8a86f61" type="org.openqa.selenium.StaleElementReferenceException"><![CDATA[Given open website..........................................................passed
+When user register with 'test1' and 'test2'.................................failed
+
+StackTrace:
+org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'cyax-C02Q3A6GG8WN', ip: 'fdaa:bbcc:ddee:0:7d1e:5ac:ebd0:8016%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=/var/folders/xv/82hf63qn3w933wt9vqdh6jrc0000gq/T/.com.google.Chrome.oVzSuO}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=MAC, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:54829}, acceptInsecureCerts=false, browserVersion=83.0.4103.106, browserName=chrome, javascriptEnabled=true, platformName=MAC, setWindowRect=true, webauthn:virtualAuthenticators=true}]
+Session ID: c056e5caa041fddcbc531882c8a86f61
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:275)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at stepDefinitions.WebStepDefinitions.userRegisterWithUserNameAndPassword(WebStepDefinitions.java:37)
+	at ✽.user register with 'test1' and 'test2'(file:///Users/CYAX/Downloads/frameworkCucumber/src/test/resources/features/sampleTest.feature:16)
+]]></failure>
+</testcase>
+<testcase classname="Sample framework1" name="sample test11" time="9.318">
+<failure message="stale element reference: element is not attached to the page document&#10;  (Session info: chrome=83.0.4103.106)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html&#10;Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'&#10;System info: host: 'cyax-C02Q3A6GG8WN', ip: 'fdaa:bbcc:ddee:0:7d1e:5ac:ebd0:8016%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_181'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=/var/folders/xv/82hf63qn3w933wt9vqdh6jrc0000gq/T/.com.google.Chrome.Ovi7f7}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=MAC, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:54614}, acceptInsecureCerts=false, browserVersion=83.0.4103.106, browserName=chrome, javascriptEnabled=true, platformName=MAC, setWindowRect=true, webauthn:virtualAuthenticators=true}]&#10;Session ID: d21cf98f12a3edddd0ef5c6cc34c69e0" type="org.openqa.selenium.StaleElementReferenceException"><![CDATA[Given open website..........................................................passed
+When user login with 'test' and 'test'......................................failed
+
+StackTrace:
+org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'cyax-C02Q3A6GG8WN', ip: 'fdaa:bbcc:ddee:0:7d1e:5ac:ebd0:8016%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=/var/folders/xv/82hf63qn3w933wt9vqdh6jrc0000gq/T/.com.google.Chrome.Ovi7f7}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=MAC, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:54614}, acceptInsecureCerts=false, browserVersion=83.0.4103.106, browserName=chrome, javascriptEnabled=true, platformName=MAC, setWindowRect=true, webauthn:virtualAuthenticators=true}]
+Session ID: d21cf98f12a3edddd0ef5c6cc34c69e0
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:275)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at stepDefinitions.WebStepDefinitions.userLoginWithUserNameAndPassword(WebStepDefinitions.java:30)
+	at ✽.user login with 'test' and 'test'(file:///Users/CYAX/Downloads/frameworkCucumber/src/test/resources/features/sampleTest1.feature:7)
+]]></failure>
+</testcase>
+<testcase classname="Sample framework1" name="sample test21" time="7.583">
+<failure message="invalid session id&#10;Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'&#10;System info: host: 'cyax-C02Q3A6GG8WN', ip: 'fdaa:bbcc:ddee:0:7d1e:5ac:ebd0:8016%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_181'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=/var/folders/xv/82hf63qn3w933wt9vqdh6jrc0000gq/T/.com.google.Chrome.oVzSuO}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=MAC, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:54829}, acceptInsecureCerts=false, browserVersion=83.0.4103.106, browserName=chrome, javascriptEnabled=true, platformName=MAC, setWindowRect=true, webauthn:virtualAuthenticators=true}]&#10;Session ID: c056e5caa041fddcbc531882c8a86f61&#10;*** Element info: {Using=id, value=user_email}" type="org.openqa.selenium.NoSuchSessionException"><![CDATA[Given open website..........................................................passed
+When user register with 'test1' and 'test2'.................................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'cyax-C02Q3A6GG8WN', ip: 'fdaa:bbcc:ddee:0:7d1e:5ac:ebd0:8016%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=/var/folders/xv/82hf63qn3w933wt9vqdh6jrc0000gq/T/.com.google.Chrome.oVzSuO}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=MAC, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:54829}, acceptInsecureCerts=false, browserVersion=83.0.4103.106, browserName=chrome, javascriptEnabled=true, platformName=MAC, setWindowRect=true, webauthn:virtualAuthenticators=true}]
+Session ID: c056e5caa041fddcbc531882c8a86f61
+*** Element info: {Using=id, value=user_email}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:462)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at framework.BasePage.getWebElement(BasePage.java:192)
+	at pages.Page3.obj2(Page3.java:12)
+	at stepDefinitions.WebStepDefinitions.userRegisterWithUserNameAndPassword(WebStepDefinitions.java:39)
+	at ✽.user register with 'test1' and 'test2'(file:///Users/CYAX/Downloads/frameworkCucumber/src/test/resources/features/sampleTest1.feature:16)
+]]></failure>
+</testcase>
+</testsuite>
